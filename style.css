@@ -1,0 +1,345 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1650px;
+    margin:0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn button {
+    color: white;
+    background-color:rgb(198, 7, 13);
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2.titulo span {
+    color:rgb(198, 7, 13);
+}
+
+
+
+/* CABEÇALHO */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 15px;
+    background-color: rgb(226, 226, 226);
+    z-index: 1000; 
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color:rgb(198, 7, 13);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: rgb(133, 9, 9);
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block ;
+    padding: 0 40px;
+}
+
+
+.btn button:hover {
+    box-shadow: 0px 0px 8px rgba(255, 0, 0, 0.508);
+    transform: scale(1.05);
+}
+
+header img {
+    width: 200px;
+    height: 100px;
+}
+
+
+
+/* TOPO DO SITE */
+.img-topo-site img {
+    width: 600px;
+    height: 500px;
+}
+
+section.topo-do-site {
+    padding: 200px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: white;
+    font-size: 65px;
+}
+
+p {
+    color: white;
+    text-align: justify;
+}
+
+.topo-do-site .txt-topo-site {
+    margin: 40px 0;
+}
+
+.topo-do-site .txt-topo-site .btn {
+    padding-top: 20px;
+}
+
+
+
+/* SHOES */
+section.shoes {
+    padding: 150px 4%;
+    align-items: center;
+}
+
+section.shoes .flex {
+    gap: 60px;
+}
+
+.shoes .shoes-box {
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: rgb(226, 226, 226);
+    transition: .2s;
+    font-size: 14px;
+}
+
+.shoes-box {
+    width: 480px;
+    height: 650px;
+}
+
+.bloco2 {
+    justify-content: space-between;
+}
+
+.shoes .shoes-box p {
+    color: black;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.shoes .shoes-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.shoes .shoes-box h3 {
+    font-size: 30px;
+    color: rgb(198, 7, 13);
+}
+
+.shoes .shoes-box img {
+    width: 400px;
+    height: 400px;
+}
+
+.shoes .shoes-box img:hover {
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+
+
+
+/* SOBRE */
+section.sobre {
+    padding: 200px 4%;
+}
+
+.sobre .txt-sobre {
+    color: white;
+
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+section.sobre .img-sobre img {
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 47px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color:rgb(198, 7, 13);
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+
+
+/* ULTIMA SEÇÂO */
+section.cor-fundo {
+    background-color:rgb(226, 226, 226) ; ;
+}
+
+section.cor-fundo .txt-sobre p {
+    color: black;
+    font-weight: 600;
+}
+
+.cor-fundo .txt-sobre h2 {
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    background-color:rgb(226, 226, 226) ;
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.096);
+    color:black
+}
+
+footer .logo-footer img {
+    width: 200px;
+    height: 100px;
+}
+
+footer .flex {
+    align-items: center;
+}
+
+footer p {
+    padding-left: 100px;
+    color: black;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1370px){
+    header img {
+        width: 150px;
+        height: 90px;
+    }
+    .interface {
+        max-width: 1280px;
+    }
+    
+    .shoes-box {
+        width: 400px;
+        height: 570px;
+    }
+    .shoes .shoes-box img {
+        width: 270px;
+        height: 270px;
+    }
+    .shoes h2 {
+        font-size: 40px;
+    }
+    
+    .sobre .txt-sobre p {
+        font-size: 14px;
+    }
+    section.sobre {
+        padding: 150px 4%;
+    }}
+    
+    
+    
+    
+    @media screen and (max-width: 1177px){
+    header img {
+        width: 150px;
+        height: 90px;
+    }
+    .interface {
+        max-width: 1090px;
+    }
+        
+    section.topo-do-site {
+        padding: 160px 4%;
+    }
+    .img-topo-site img {
+        width: 500px;
+        height: 400px;
+    }
+    .topo-do-site .txt-topo-site p {
+        font-size: 15px;
+    }
+        
+    .shoes-box {
+        width: 320px;
+        height: 490px;
+    }
+    .shoes .shoes-box img {
+        width: 200px;
+        height: 200px;
+    }
+    .shoes .shoes-box h3 {
+        font-size: 25px;
+    }
+        
+    .sobre .txt-sobre h2 {
+        font-size: 40px;
+    }
+    .sobre .txt-sobre p {
+        font-size: 12px;
+    }
+    
+    section.sobre2 .txt-sobre li {
+        font-size: 12px;
+    }}
+
+
